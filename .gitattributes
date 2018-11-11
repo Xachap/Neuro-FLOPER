@@ -1,1 +1,2 @@
-FLOPER/0-fuzzy.fpl linguist-vendored=false
+*.fpl linguist-language=FASILL
+*.fl linguist-language=FASILL
