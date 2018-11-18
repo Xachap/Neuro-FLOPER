@@ -63,6 +63,7 @@ agr_sinusoid(pos_inf,pos_inf).
 agr_sinusoid(neg_inf,neg_inf).
 agr_sinusoid(X,Y) :- (X=0 -> Y is 1; Y is (sin(X)/X)).
 
-agr_identity(pos_inf,pos_inf).
-agr_identity(neg_inf,neg_inf).
-agr_identity(X,Y) :- Y is X.
+% Identity function
+agr_linear(pos_inf,pos_inf).
+agr_linear(neg_inf,neg_inf).
+agr_linear(X,Y) :- Y is X.
