@@ -104,8 +104,8 @@ class Ui_TunerWindow(object):
         self.comboBox.setItemText(4, _translate("TunerWindow", "@relu", None))
         #self.comboBox.setItemText(5, _translate("TunerWindow", "@leaky_relu", None))
         self.comboBox.setItemText(6, _translate("TunerWindow", "@tanh", None))
-        self.comboBox.setItemText(7, _translate("TunerWindow", "@arctan", None))
-        self.comboBox.setItemText(8, _translate("TunerWindow", "@sinusoid", None))
+        #self.comboBox.setItemText(7, _translate("TunerWindow", "@arctan", None))
+        #self.comboBox.setItemText(8, _translate("TunerWindow", "@sinusoid", None))
         self.cancelButton.setText(_translate("TunerWindow", "Cancel", None))
         self.saveButton.setText(_translate("TunerWindow", "Save", None))
 

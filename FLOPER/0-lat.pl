@@ -55,13 +55,13 @@ agr_tanh(pos_inf,pos_inf).
 agr_tanh(neg_inf,neg_inf).
 agr_tanh(X,Y) :- Y is ((exp(X)-exp(-X))/(exp(X)+exp(-X)).
 
-agr_arctan(pos_inf,pos_inf).
-agr_arctan(neg_inf,neg_inf).
-agr_arctan(X,Y) :- Y is atan(X).
+%agr_arctan(pos_inf,pos_inf).
+%agr_arctan(neg_inf,neg_inf).
+%agr_arctan(X,Y) :- Y is atan(X).
 
-agr_sinusoid(pos_inf,pos_inf).
-agr_sinusoid(neg_inf,neg_inf).
-agr_sinusoid(X,Y) :- (X=0 -> Y is 1; Y is (sin(X)/X)).
+%agr_sinusoid(pos_inf,pos_inf).
+%agr_sinusoid(neg_inf,neg_inf).
+%agr_sinusoid(X,Y) :- (X=0 -> Y is 1; Y is (sin(X)/X)).
 
 % Identity function
 agr_linear(pos_inf,pos_inf).
