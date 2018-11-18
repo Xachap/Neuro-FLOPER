@@ -47,9 +47,9 @@ agr_relu(pos_inf,pos_inf).
 agr_relu(neg_inf,neg_inf).
 agr_relu(X,Y) :- (X<0 -> Y=0; Y=X).
 
-agr_leaky_relu(pos_inf,pos_inf).
-agr_leaky_relu(neg_inf,neg_inf).
-agr_leaky_relu(X,Y) :- (X<0 -> Y is 0.01*X; Y=X).
+%agr_leaky_relu(pos_inf,pos_inf).
+%agr_leaky_relu(neg_inf,neg_inf).
+%agr_leaky_relu(X,Y) :- (X<0 -> Y is 0.01*X; Y=X).
 
 agr_tanh(pos_inf,pos_inf).
 agr_tanh(neg_inf,neg_inf).
