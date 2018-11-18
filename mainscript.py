@@ -40,7 +40,7 @@ class App(QtGui.QMainWindow, mainwindow.Ui_NeuroFloper):
     model = Sequential()
     labels = []
     conversion = ""
-    model = False
+    modelB = False
     test = False
     mod = ["#@s1"]
     item = ""
@@ -114,7 +114,7 @@ class App(QtGui.QMainWindow, mainwindow.Ui_NeuroFloper):
         self.SaveFLOPER.setEnabled(True)
 	self.conversion.to_Floper()
 
-	self.model = True
+	self.modelB = True
 	self.checkTune()
 	
 
@@ -331,8 +331,10 @@ class App(QtGui.QMainWindow, mainwindow.Ui_NeuroFloper):
 
 	if num == "layer":
   	    self.conversion.output_f.activation = new
+	    self.model.layers[self.conversion.output_f.n_layers-2].activation = eval('keras.activations.'+new[1:])
 	else:
 	    self.conversion.hidden_fs[int(num)-2].activation = new
+	    self.model.layers[int(num)-2].activation = eval('keras.activations.'+new[1:])
 	
 	activations = getActivations(self.conversion)
 	self.FunctionsView.clear()
@@ -409,7 +411,7 @@ class App(QtGui.QMainWindow, mainwindow.Ui_NeuroFloper):
         self.actionEdit_FLOPER_program.setEnabled(False)
         self.SaveFLOPER.setEnabled(False)
 	self.actionModify_Test_Cases.setEnabled(False)
-	self.model = False
+	self.modelB = False
 	self.test = False
 
     def save_Floper(self):
@@ -423,7 +425,7 @@ class App(QtGui.QMainWindow, mainwindow.Ui_NeuroFloper):
              	    f1.write(line)
 
     def checkTune(self):
-        if self.model == True and self.test == True:
+        if self.modelB == True and self.test == True:
 	    self.Tune.setEnabled(True)
 	    self.actionTune_it.setEnabled(False)
 

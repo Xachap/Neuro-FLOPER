@@ -47,7 +47,7 @@ def restructure(model,dlabels):
             while k < len(last_layer):
                 parents[last_layer[k].id_n] = weights[0][k][j-1]    #Add each parent to the current node
                 k += 1
-            bias = weights[1][j-1]
+     	    bias = weights[1][j-1]
             nodes.append(node_f(var,parents,bias))                     #Define the new node
             j += 1
         last_layer = nodes
@@ -70,8 +70,8 @@ def restructure(model,dlabels):
         parents = {}                                            #Create a diccionary for each parent and their weight
         while k < len(last_layer):
             parents[last_layer[k].id_n] = weights[0][k][j-1]    #Add each parent to the current node
-            k += 1
-        bias = weights[1][j-1]
+            k += 1        
+	bias = weights[1][j-1]
         nodes.append(node_f(var,parents,bias))                       #Define the new node
         j += 1
     output_layer = layer_f(n_nodes,nodes,counter_layers,function)          #Define the output layer

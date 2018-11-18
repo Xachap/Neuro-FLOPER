@@ -21,21 +21,24 @@ class NN_f:
         return string
 
     def create_node(self, node, layer_activation):
-        aux = node.id_n + "<- "+layer_activation+"( @add("+str(node.bias)+", @add ( "
-        n_nodes_prev = len(node.p_nodes.keys())
+        aux = node.id_n + "<- "+layer_activation+"( @add("+str(node.bias)+", @add ( "       
+	keys = sorted(node.p_nodes.keys())
+	keys.reverse()
+	n_nodes_prev = len(node.p_nodes.keys())
         n_nodes_counter = n_nodes_prev
         if n_nodes_prev == 1:
             parent, weight = node.p_nodes.items()[0]
             aux += "@prod("+str(weight)+","+parent+"), 0"
         else:
-            for parent, weight in node.p_nodes.items():
+            while len(keys)>0:
+		parent = keys.pop()
                 if n_nodes_counter ==1:
-                    aux += "@prod("+str(weight)+","+parent+")"
+                    aux += "@prod("+str(node.p_nodes.get(parent))+","+parent+")"
                 elif n_nodes_counter == 2:
-                    aux += "@prod("+str(weight)+","+parent+"),"
+                    aux += "@prod("+str(node.p_nodes.get(parent))+","+parent+"), "
                     n_nodes_counter = n_nodes_counter - 1
                 else:
-                    aux += "@prod("+str(weight)+","+parent+"), @add("
+                    aux += "@prod("+str(node.p_nodes.get(parent))+","+parent+"), @add( "
                     n_nodes_counter = n_nodes_counter - 1
         for i in range(2,n_nodes_prev):
             aux += ")"
