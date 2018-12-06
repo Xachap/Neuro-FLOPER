@@ -6,5 +6,6 @@ In order to execute Neuro-FLOPER in your machine, you must have installed:
 * Keras 2.1.4
 * Tensorflow 1.3.0
 * SWI-Prolog 6.0.2 for x86_64-linux
+* PyQt4
 
 # #DOCUMENTATION IN CONSTRUCTION
