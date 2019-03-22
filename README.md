@@ -1,8 +1,5 @@
 <img src="IMG/logo_about.png" align="right" height="166" width="270"/>
-
-
 # Neuro-FLOPER
-
 A program that allows you to translate neural networks created with Keras to fuzzy logic programs, in order to tune these networks from a given dataset. I created this tool during the development of my Final Year Project, and it wants to solve structural deficiencies created during the training process of a multilayer perceptron. This project has been developed with DEC-Tau research team.
 ## Prerequisites
 In order to execute Neuro-FLOPER in your machine, you must have installed:
