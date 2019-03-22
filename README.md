@@ -16,4 +16,8 @@ In order to execute Neuro-FLOPER in your machine, you must have installed:
 
 The full document of this project appears also in this repository. It corresponds to the final memory for the FYP <a href="https://github.com/Xachap/Neuro-FLOPER/blob/master/Developing%20Fuzzy%20Neural%20Networks%20With%20The%20FLOPER%20Environment.pdf">"Developing Fuzzy Neural Networks With The FLOPER Environment"</a>.
 
-Also, a video of a walkthrough of Neuro-FLOPER is available on YouTube:
+Also, a video of a walkthrough in Neuro-FLOPER is available on YouTube:
+
+<p align="center">
+<a href="https://www.youtube.com/watch?v=uLEuXNAy6AI&vl=es"><img src="IMG/demo.png" height="400" width="700"/></a>
+</p>
