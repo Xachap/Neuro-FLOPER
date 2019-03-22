@@ -8,4 +8,5 @@ In order to execute Neuro-FLOPER in your machine, you must have installed:
 * SWI-Prolog 6.0.2 for x86_64-linux
 * PyQt4
 
-# #DOCUMENTATION IN CONSTRUCTION
+## DOCUMENTATION
+The full document of this project appears also in this repository. It corresponds to the final memory for the FYP "Developing Fuzzy Neural Networks With The FLOPER Environment".
