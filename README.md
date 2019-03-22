@@ -19,5 +19,5 @@ The full document of this project appears also in this repository. It correspond
 Also, a video of a walkthrough in Neuro-FLOPER is available on YouTube:
 
 <p align="center">
-<a href="https://www.youtube.com/watch?v=uLEuXNAy6AI&vl=es"><img src="IMG/demo.png" height="400" width="700"/></a>
+<a href="https://www.youtube.com/watch?v=uLEuXNAy6AI&vl=es" target="_blank"><img src="IMG/demo.png" height="400" width="700"/></a>
 </p>
