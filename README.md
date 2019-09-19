@@ -22,3 +22,8 @@ A video of the basic walkthrough in Neuro-FLOPER is available on YouTube:
 <a href="https://www.youtube.com/watch?v=uLEuXNAy6AI&vl=es" target="_blank"><img src="IMG/demo.png" height="400" width="700"/></a>
 </p>
 
+## About this work
+
+ Please, cite Neuro-FLOPER as:
+ 
+ * Moreno G., Pérez J., Riaza J.A. (2019) Fuzzy Logic Programming for Tuning Neural Networks. In: Fodor P., Montali M., Calvanese D., Roman D. (eds) Rules and Reasoning. RuleML+RR 2019. Lecture Notes in Computer Science, vol 11784. Springer, Cham
